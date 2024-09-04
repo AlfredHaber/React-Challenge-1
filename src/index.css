@@ -1,13 +1,244 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+ 
+ 
+ /* kelchi */
+ .all {
+    background-color: hsla(240, 100%, 50%, 0.154);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:10px;
+
+ }
+
+
+
+
+
+
+
+
+
+/* add button */
+ .addButton{
+    margin-left:5px;  
+    background-color: rgb(4, 183, 4);
+    transition: background-color 0.9s ease;
+    font-size:30px;
+    width:80px;
+ }
+.addButton:hover{
+    background-color: rgb(2, 110, 2);
+    transition: background-color 0.9s ease;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+
+
+/* To-Do-List */
+.todo{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem;
 }
+
+/* Enter a Task */
+.enter{
+    font-size: 30px;
+}
+
+
+/* all the tasks */
+.ordered{
+    list-style-type: none;
+    width:33%; 
+}
+
+
+/* Each Task */
+.list{
+    border:3px solid hsla(0, 0%, 0%, 0.551);
+    margin-bottom:10px;
+    display: flex;
+    flex-direction:row ;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+
+
+/* edit, delete, save, cancel */
+
+
+.buttonwrap, .buttonwrapp{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom:4px;
+}
+
+
+.text, .editing{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left:5px;
+}
+.text {
+    font-size: 40px;
+}
+.editing{
+    font-size:30px;
+}
+
+.modify, .cancel{
+    
+    font-size:20px;
+    width:65px;
+    margin-right:5px;
+    margin-top:7px;
+}
+
+.delete, .save{
+    margin-right:5px;
+    margin-top:7px;
+    font-size:20px;
+    width:70px;
+}
+
+
+.modify{
+    background-color: rgb(255, 255, 74);
+    transition: background-color 0.9s ease;
+}
+.modify:hover{
+    background-color: rgb(187, 187, 35);
+    transition: background-color 0.8s ease;
+}
+
+
+.delete, .cancel{
+    background-color: rgb(249, 58, 58);
+    transition: background-color 0.9s ease;
+}
+.delete:hover, .cancel:hover{
+    background-color: rgb(157, 2, 2);
+    transition: background-color 0.8s ease;
+}
+
+
+.save{
+    background-color: rgb(4, 183, 4);
+    transition: background-color 0.9s ease;
+}
+.save:hover{
+    background-color: rgb(2, 110, 2);
+    transition: background-color 0.8s ease;
+}
+
+.cancel{
+    width:80px;
+}
+
+
+
+
+/* Delete Every Task */
+.deleteAll{
+    font-size: 40px;
+    background-color: rgb(249, 58, 58);
+    transition: background-color 0.9s ease;
+}
+
+.deleteAll:hover{
+    background-color: rgb(157, 2, 2);
+    transition: background-color 0.8s ease;
+    
+}
+
+
+
+
+/* EDITS */
+
+.editing{
+    width:60%;
+}
+
+
+
+/* Media Queries */
+@media (min-width: 300px) and (max-width: 675px) {
+    .ordered{
+        width: 65%;
+    }
+    .todo{
+        font-size: 1rem;
+    }
+    .enter{
+        font-size: 10px;
+    }
+    .addButton{
+        font-size:10px;
+    }
+    .text {
+        font-size: 13px;
+    }
+    .editing{
+        font-size:10px;
+    }
+    .modify, .cancel{
+        font-size:6.5px;
+        width:35px;
+    }
+    
+    .delete, .save{
+        font-size:6.5px;
+        width:35px;
+    }
+    .cancel{
+        width:35px;
+    }
+    .deleteAll{
+        font-size: 13px;
+    }
+    
+}
+
+/* Medium devices (tablets, 700px to 992px) */
+@media (min-width: 675px) and (max-width: 1000px) {
+    .ordered{
+        width: 45%;
+    }
+    .todo{
+        font-size: 2rem;
+    }
+    .enter{
+        font-size: 20px;
+    }
+    .addButton{
+        font-size:20px;
+    }
+    .text {
+        font-size: 26.5px;
+    }
+    .editing{
+        font-size:20px;
+    }
+    .modify, .cancel{
+        font-size:13px;
+    }
+    
+    .delete, .save{
+        font-size:13px;
+
+    }
+    .cancel{
+        width:53px;
+    }
+    .deleteAll{
+        font-size: 26px;
+    }
+    
+    
+}
+
+
